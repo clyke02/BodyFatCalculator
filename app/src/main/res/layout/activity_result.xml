@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".ResultActivity">
+
+    <!-- Header with Back Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Kembali"
+            android:textSize="14sp"
+            android:backgroundTint="@color/button_simple"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <!-- Result Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Body Fat (%) Result"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_simple"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Results Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/simple_border"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- BMI Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nilai BMI Anda:"
+                android:textColor="@color/text_simple"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvResultBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="22.86" />
+        </LinearLayout>
+
+        <!-- BFP Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nilai BFP Anda:"
+                android:textColor="@color/text_simple"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvResultBFP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="16.98" />
+        </LinearLayout>
+
+        <!-- Kategori Result -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kategori BMI:"
+                android:textColor="@color/text_simple"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvResultKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="10-20% (Rendah)" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Info Pengembang Button -->
+    <Button
+        android:id="@+id/btnInfoPengembang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info Pengembang"
+        android:textSize="16sp"
+        android:backgroundTint="@color/button_simple"
+        android:textColor="@color/black" />
+
+</LinearLayout> 
